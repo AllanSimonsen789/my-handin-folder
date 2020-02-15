@@ -1,5 +1,6 @@
 
 --------Monday---------------
+
 Opgave Continuous integration with Travis-CI
 - Completed
 - The Repo with travis and passing build can be seen here: https://github.com/AllanSimonsen789/travisGettingStarted
@@ -18,6 +19,7 @@ the repo can be found here: https://github.com/AllanSimonsen789/week7MondayMovie
 - Not completed
 
 ---------------Tuesday------------
+
 Opgave: Testing REST-endpoints
 
 #Task 1
@@ -47,6 +49,7 @@ the method can be found in this class, its called "testMovieByID()"
 Can be seen under "uge7" -> "week7MondayMovieExcersise" -> "src" -> "test" -> "java" -> "rest" -> "MovieResourceTest.java"
 
 ---------------Wednesday------------
+
 
 OPGAVE The JavaScript Array
 -Completed
@@ -78,6 +81,7 @@ The answers can be found in AsynchronousCallbacks.js
 
 ----------Thursday--------------
 
+
 Opgave Dom Manipulation and Events
 All the classes can be found in ->uge7->week7ThursdayExcersise->src->main->webapp
 
@@ -108,6 +112,7 @@ Opgave Dynamic UI manipulation using data obtained via fetch
 -not completed (red)
 
 ---------Friday----------
+
 Opgave part 2
 -not completed
 
