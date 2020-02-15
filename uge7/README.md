@@ -87,28 +87,35 @@ All the classes can be found in ->uge7->week7ThursdayExcersise->src->main->webap
 
 #Task Simple DOM manipulation and Event handling
 -completed
+
 The answers can be found in: colorjs.js (with help from index.html & colorcss.css)
 
 #Task Event Bubbling and event arguments
 -completed
+
 The answers can be found in: bubbling.js (with help from bubbling.html & bubbling.css)
 All the tasks was merged to same function(as per requested by task c)
 
 #Task Using map to create list’s
 -completed
+
 The answers can be found in: UsingMapToCreateList.js (with help from UsingMapToCreateList.css)
 
 #Task Using map and filter to create dynamic table-rows
 -completed
+
 The answers can be found in: UsingMapAndFilterToCreateDynamicTableRows.js (with help from UsingMapAndFilterToCreateDynamicTableRows.html)
 
 #Task Implement a simple calculator 
--Almost complete. did not make the final calculation work. the inputs from buttons work. however could not find a function to convert the string to a nummeric result.
+
+-Almost complete. 
+did not make the final calculation work. the inputs from buttons work. however could not find a function to convert the string to a nummeric result.
 The answers can be found in: ImplementASimpleCalculator.js (with help from ImplementASimpleCalculator.html & ImplementASimpleCalculator.css)
 
 
 
 Opgave Dynamic UI manipulation using data obtained via fetch
+
 -not completed (red)
 
 ---------Friday----------
