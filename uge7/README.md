@@ -24,7 +24,9 @@ Opgave: Testing REST-endpoints
 
 #Task 1
 -Completed - however i used the same netbeans project from mondays excersise
+
 The project is deployed and live here: https://host.hangovergaming.dk/week7MondayMovieExcersise/
+
 The project can be seen here on github with passing travis build confirmation: https://github.com/AllanSimonsen789/week7MondayMovieExcersise
 
 #Task 2
