@@ -12,14 +12,14 @@ function maketable(array){
     let returnstring = "<table><tr>"
     let keysarray = Object.keys(array[0]);
     keysarray.forEach(function(item){
-        returnstring += "<th>" + item + "</th>"
+        returnstring += `<th>${item}</th>`
     })
     returnstring += "</tr>"
     array.forEach(function(item){
         let values = Object.values(item)
         returnstring += "<tr>"
         values.forEach(function(value){
-            returnstring += "<td>" + value + "</td>"
+            returnstring += `<td>${value}</td>`
         })
         returnstring += "</tr>"
     })
