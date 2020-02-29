@@ -2,6 +2,7 @@ package facades;
 
 import entities.Customer;
 import entities.ItemType;
+import entities.MainOrder;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -68,5 +69,14 @@ public class CustomerFacade {
        EntityManager em = emf.createEntityManager();
        return em.find(ItemType.class, id);
    }
-
+   
+   public MainOrder createMainOrder(Long id){
+       EntityManager em = emf.createEntityManager();
+       em.getTransaction().begin();
+       Customer customer = em.find(Customer.class, id);
+       MainOrder order = new MainOrder();
+       customer.addOrder(order);
+       em.getTransaction().commit();
+       return order;
+   }
 }

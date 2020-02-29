@@ -166,3 +166,14 @@ They both implement @OneToOne relation with person being the owning side with th
 also we can see all the test running green
 
 # --------thursday---------------
+
+## Object Relational Mapping with JPA
+
+#TASK
+-Completed the green
+-facade: uge9->jpaormexamprep->src->main->java->facades->CustomerFacade.java
+-facade test: uge9->jpaormexamprep->src->test->java->facades->CustomerFacadeTest.java
+-Completed the five first green tasks with test!
+I have tried to implement the 6th green task which can be seen in the createMainOrder() method in the facade.
+however i could not get it to work in the database or with the test.
+i feel like i should have made a facade for each entity -? and now im just kinda tired now tbh i want the rest of my saturday of.

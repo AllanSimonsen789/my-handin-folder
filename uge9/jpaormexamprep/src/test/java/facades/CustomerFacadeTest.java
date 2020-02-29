@@ -121,4 +121,9 @@ public class CustomerFacadeTest {
         assertEquals(it1, facade.findItemType(it1.getId()));
 
     }
+    
+    @Test
+    public void testAddOrderToCustomer(){
+        facade.createMainOrder(c1.getId());
+    }
 }
