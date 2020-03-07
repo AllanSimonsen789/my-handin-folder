@@ -40,5 +40,7 @@ even tried to use the jpa-rest-devops startcode to use as the backend.
 
 i realise now that i may have been trying the call on the wrong port... but i used my whole saturday and ive given up on this assignment. 
 
+The attempt can be seen in the ThursdayExcersiseBackend project folder.
+
 # --------Friday---------------
 Did not complete any friday assignments as i struggled with wednesday and thursday excersises
