@@ -47,8 +47,8 @@ public class CustomerFacadeTest {
      */
     @BeforeAll
     public static void setUpClassV2() {
-       emf = EMF_Creator.createEntityManagerFactory(DbSelector.TEST,Strategy.DROP_AND_CREATE);
-       facade = CustomerFacade.getCustomerFacade(emf);
+        emf = EMF_Creator.createEntityManagerFactory(DbSelector.TEST, Strategy.DROP_AND_CREATE);
+        facade = CustomerFacade.getCustomerFacade(emf);
     }
 
     @AfterAll
@@ -63,10 +63,10 @@ public class CustomerFacadeTest {
         EntityManager em = emf.createEntityManager();
         try {
             em.getTransaction().begin();
+            em.createNamedQuery("OrderLine.deleteAllRows").executeUpdate();
             em.createNamedQuery("MainOrder.deleteAllRows").executeUpdate();
             em.createNamedQuery("Customer.deleteAllRows").executeUpdate();
             em.createNamedQuery("ItemType.deleteAllRows").executeUpdate();
-            em.createNamedQuery("OrderLine.deleteAllRows").executeUpdate();
             c1 = new Customer("allan", "123@mail.com");
             c2 = new Customer("jonas", "312@mail.com");
             em.persist(c1);
@@ -91,39 +91,38 @@ public class CustomerFacadeTest {
 //        Remove any data after each test was run
     }
 
-    
     @Test
-    public void testAddPerson(){
+    public void testAddPerson() {
         Customer customer = new Customer("Jacob", "333@mail.com");
         customer.addOrder(new MainOrder());
         Customer CustomerResult = facade.addCustomer(customer);
         assertNotNull(CustomerResult);
     }
-    
+
     @Test
-    public void testFindPerson(){
-        assertEquals(c1, facade.findCustomer(c1.getId()));
+    public void testFindPerson() {
+        assertEquals(c1, facade.findCustomerById(c1.getId()));
     }
-    
+
     @Test
-    public void testGetAllCustomers(){
+    public void testGetAllCustomers() {
         assertEquals(2, facade.getAllCustomers().size());
     }
 
     @Test
-    public void testAddItemType(){
+    public void testAddItemType() {
         assertNotNull(facade.createItemType(new ItemType("Svaneke bryg pilsner", "God Pilsner", 50)));
-        
+
     }
-    
+
     @Test
-    public void testFindItemType(){
+    public void testFindItemType() {
         assertEquals(it1, facade.findItemType(it1.getId()));
 
     }
-    
+
     @Test
-    public void testAddOrderToCustomer(){
+    public void testAddOrderToCustomer() {
         facade.createMainOrder(c1.getId());
     }
 }
